@@ -1,0 +1,139 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:300,400';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body, html {
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	height: 100%;
+	position: relative;
+	background-color: #fafafa;
+}
+
+a {
+	color: #fff;
+	text-decoration: none; 
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.sidebar {
+	width: 250px;
+	background-color: #302F2F;
+	position: fixed;
+	top: 0px;
+	left: 0;
+	bottom: 0;
+	box-shadow: 1px 0px 10px #777;
+}
+
+.sidebar nav > a {
+	font-size: 150%;
+	display: inline-block;
+	padding: 30px 0px;
+	padding-left: 30px;
+	opacity: 0.7;
+	transition: all 0.2s;
+}
+.sidebar nav > a:hover {
+	opacity: 1;
+}
+
+.sidebar nav a span {
+	font-weight: 300;
+}
+
+.sidebar nav img {
+	width: 200px;
+	display: block;
+	margin: 150px auto;
+}
+
+.main-content {
+	width: calc(100% - 250px);
+	height: 100%;
+	margin-left: 250px;
+	padding: 20px 30px;
+}
+.main-content .panel-wrapper {
+	margin: 20px 0;
+	box-shadow: 0px 1px 5px #777;
+}
+
+.main-content .panel-wrapper .panel-head {
+	background-color: #00A5F2;
+	color: #fff;
+	padding: 10px 10px;
+	border: 1px solid #00A5F2;
+}
+.main-content .panel-wrapper .panel-body {
+	padding: 20px 10px;
+	font-size: 80%;
+}
+
+.button {
+  border: 0;
+  cursor: pointer;
+  outline: none;
+  border-radius: 8px;
+  padding: 10px 15px;
+  font-size: 20px;
+  letter-spacing: .1em;
+  background: #00A5F2;
+  color: #ffffff;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-appearance: none;
+  display: block;
+  margin: 15px auto;
+  width: 20%;
+}
+.button:hover, .button:focus {
+  background: #179b77;
+}
+
+.search-input {
+    font-size: 16px;
+    padding: 15px;
+    display: block;
+    margin: 18px auto;
+    width: 30%;
+    background: transparent;
+    color: #00A5F2;
+    letter-spacing: 1px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    height: 25px;
+}
+.search-input:focus {
+    border-color: #00A5F2;
+    outline: none;
+}
+
+/*Placeholder Animation Start*/
+::-webkit-input-placeholder { /* Edge */
+    color: #00A5F2;
+    font-size: 12px;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #00A5F2;
+    font-size: 12px;
+}
+::placeholder {
+    color: #00A5F2;
+    font-size: 12px;
+}
+/*Place Holder Animation End*/
+
+#search-results {
+	display: none;
+}
