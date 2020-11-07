@@ -54,7 +54,7 @@ $("#search-btn").on("click", function(event) {
                 while(response.api.hits[i])
                 {
                     var x = document.createElement("VIDEO");
-                    x.setAttribute("src", response.api.hits[0].videos.medium.url);
+                    x.setAttribute("src", response.api.hits[i].videos.medium.url);
                     x.setAttribute("width", "200");
                     x.setAttribute("height", "300");
                     x.setAttribute("controls", "controls");
