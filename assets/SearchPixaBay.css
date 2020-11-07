@@ -91,9 +91,9 @@ a {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   -webkit-appearance: none;
-  display: block;
   margin: 15px auto;
   width: 20%;
+  display: none;
 }
 .button:hover, .button:focus {
   background: #179b77;
@@ -110,11 +110,11 @@ a {
     letter-spacing: 1px;
     outline: none;
     border: none;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #00A5F2;
     height: 25px;
 }
 .search-input:focus {
-    border-color: #00A5F2;
+    border-color: #179b77;
     outline: none;
 }
 
@@ -136,4 +136,15 @@ a {
 
 #search-results {
 	display: none;
+}
+
+.rd-btn {
+    padding: 15px;
+    display: block;
+	margin: 8px 400px;
+	width: 600px;
+}
+
+.rd-btn label {
+	margin: 0 80px 0 0;
 }

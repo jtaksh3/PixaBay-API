@@ -21,8 +21,14 @@
 					Search Here!
 				</div>
 				<div class="panel-body">
-					<input type="text" name="quality" onblur="validateQuality(this)" class="search-input" placeholder="Enter Keyword">
-					        <button id="search-btn" type="submit" class="button button-block"/>Search</button>
+					<input type="text" name="keyword" oninput="validateKeyword(this)" class="search-input" placeholder="Enter Keyword to Search">
+					<span class="rd-btn">
+						<input type="radio" value="Image" id="image" name="choice" checked="checked">
+						<label for="image">Image</label>
+						<input type="radio" value="Video" id="video" name="choice">
+						<label for="video">Video</label>
+                    </span>
+					<button id="search-btn" type="submit" class="button button-block"/>Search</button>
 				</div>
 			</div>
 			<div class="panel-wrapper" id="search-results">
@@ -36,5 +42,6 @@
 			</div>
 		</div>
 
+		<script src="../assets/SearchPixaBay.js"></script>
 </body>
 </html>
